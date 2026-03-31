@@ -229,12 +229,12 @@
     }
 
     /* INTRO */
-    .intro-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 28px;
-      align-items: stretch;
-    }
+   .intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.7fr;
+  gap: 28px;
+  align-items: stretch;
+}
 
     .intro-card,
     .purpose-card,
@@ -1063,6 +1063,34 @@
       color: #6c5b4d;
     }
 
+.shine-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #fffaf2 0%, #f3e6d2 100%);
+  border: 2px solid #d6a85d;
+  box-shadow: 0 12px 26px rgba(44, 36, 28, 0.12);
+}
+
+.shine-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.shine-card h3 {
+  font-size: 24px;
+  color: #2f261d;
+}
+
+.shine-card p {
+  font-size: 15px;
+  color: #55483b;
+}
+
 @media (max-width: 1080px) {
   .projects-feature-intro {
     position: static;
@@ -1119,6 +1147,10 @@
         height: 420px;
       }
     }
+
+.shine-card {
+  align-self: stretch;
+}
 
     @media (max-width: 760px) {
       .hero h1 {
@@ -1206,6 +1238,35 @@
         font-size: 22px;
       }
     }
+
+.shine-content {
+  padding: 22px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.shine-content h3 {
+  font-size: 24px;
+  color: #2f261d;
+}
+
+.shine-content p {
+  font-size: 15px;
+  color: #55483b;
+}
+
+.shine-content .btn {
+  margin-top: 6px;
+}
+
+
+    @media (max-width: 1080px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
@@ -1310,6 +1371,25 @@
             <li>To help participants live out God’s love</li>
           </ul>
         </div>
+
+<div class="card shine-card">
+  <img src="Shine.png" alt="Shine Event" class="shine-img">
+
+  <div class="shine-content">
+    <h3>Bring Your Shine Team</h3>
+
+    <p>
+      Heit’s Point Servant Events are a great opportunity for groups participating in
+      Shine to come serve together. Bring your Shine team and be part of meaningful
+      work that blesses camp, community, and ministry.
+    </p>
+
+    <a href="https://mo.lcms.org/shine/" target="_blank" class="btn btn-primary">
+      Learn About Shine
+    </a>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
@@ -1832,7 +1912,7 @@
 
       <div class="contact-info">
         <strong>Heit’s Point Lutheran Ministries</strong><br>
-        Lincoln, Missouri<br>
+        28345 Heits Point Ave, Lincoln, MO 65338<br>
         Email: <a href="mailto:info@heitspointlutheran.org">info@heitspointlutheran.org</a><br>
         Phone: <a href="tel:6606682363">660-668-2363</a>
       </div>
